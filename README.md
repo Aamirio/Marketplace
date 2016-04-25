@@ -1,5 +1,5 @@
 # Marketplace
-A basic auction API
+A basic auction API for Credit Suisse
 
 ====================================
 Implementation
