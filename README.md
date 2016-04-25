@@ -2,7 +2,7 @@
 A basic auction API
 
 ====================================
-IMPLEMENTATION
+Implementation
 ====================================
 All development was done using Intellij 14.1.5
 
@@ -15,7 +15,7 @@ The service and dao layer are loosely coupled using the JSR-330 javax.inject ann
 Note: I have used Java 8 Lambda statements in a couple of places to sort an array list using the functional Comparator interface.
 
 =====================================
-UNIT AND INTEGRATION TESTS
+Unit and Integration Tests
 =====================================
 
 All unit tests and integration tests can be run by running the "mvn clean verify" goal.
