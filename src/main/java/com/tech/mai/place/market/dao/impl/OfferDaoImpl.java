@@ -75,7 +75,7 @@ public class OfferDaoImpl implements OfferDao {
       if (offer.getItemId() == itemId) { filteredList.add(offer); }
     }
 
-    Collections.sort(filteredList, (o1, o2) -> o1.getPricePerUnit().compareTo(o2.getPricePerUnit()));
+    filteredList.sort((o1, o2) -> o1.getPricePerUnit().compareTo(o2.getPricePerUnit()));
 
     Offer offer = filteredList.get(0);
     return offer != null ? offer.getPricePerUnit() : BigDecimal.ZERO;

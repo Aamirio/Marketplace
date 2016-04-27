@@ -74,7 +74,7 @@ public class BidDaoImpl implements BidDao {
       if (bid.getItemId() == itemId) { allBidsList.add(bid); }
     }
 
-    Collections.sort(allBidsList, (o1, o2) -> o1.getPricePerUnit().compareTo(o2.getPricePerUnit()));
+    allBidsList.sort((o1, o2) -> o1.getPricePerUnit().compareTo(o2.getPricePerUnit()));
     Bid highestBid = allBidsList.get(allBidsList.size()-1);
     return highestBid != null ? highestBid.getPricePerUnit() : BigDecimal.ZERO;
   }
